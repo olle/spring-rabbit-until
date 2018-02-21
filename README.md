@@ -27,10 +27,9 @@ Don't dispair `spring-rabbit-until` to the rescue!
       offers::add);
 
   return offers.stream()
-      .filter(...filter results...)
-      .order(...order ...)
+      .filter(/* filter */)
+      .sorted(/* sorting */)
       .distinct()
-      .map()
       .collect(Collectors.toSet());
 
 ```
